@@ -1,4 +1,4 @@
-exclude: "{{djinit.project_slug}}|.github/contributors.json|CHANGELOG.md|CONTRIBUTORS.md"
+exclude: "{{cookiecutter.project_slug}}|.github/contributors.json|CHANGELOG.md|CONTRIBUTORS.md"
 default_stages: [pre-commit]
 minimum_pre_commit_version: "3.2.0"
 

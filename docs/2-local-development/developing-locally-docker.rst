@@ -16,12 +16,12 @@ Prerequisites
 * Docker; if you don't have it yet, follow the `installation instructions`_;
 * Docker Compose; refer to the official documentation for the `installation guide`_.
 * Pre-commit; refer to the official documentation for the `pre-commit`_.
-* Djinit; refer to the official GitHub repository of `Djinit`_
+* Cookiecutter; refer to the official GitHub repository of `Cookiecutter`_
 
 .. _`installation instructions`: https://docs.docker.com/install/#supported-platforms
 .. _`installation guide`: https://docs.docker.com/compose/install/
 .. _`pre-commit`: https://pre-commit.com/#install
-.. _`Djinit`: https://github.com/khulnasoft/djinit
+.. _`Cookiecutter`: https://github.com/cookiecutter/cookiecutter
 
 Before Getting Started
 ----------------------
@@ -287,7 +287,7 @@ If you want to add some sort of social authentication with a OAuth provider such
 
 Here is a link to an article on `how to add HTTPS using Nginx`_ to your local docker installation. This also includes how to serve files from the ``media`` location, in the event that you are want to serve user-uploaded content.
 
-.. _`how to add HTTPS using Nginx`: https://afroshok.com/djinit-https
+.. _`how to add HTTPS using Nginx`: https://afroshok.com/cookiecutter-https
 
 Webpack
 ~~~~~~~

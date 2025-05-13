@@ -1,20 +1,20 @@
-# Djinit Django
+# Cookiecutter Django
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/djinit/djinit/ci.yml?branch=master)](https://github.com/khulnasoft/djinit/actions/workflows/ci.yml?query=branch%3Amaster)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/khulnasoft/djinit/ci.yml?branch=master)](https://github.com/khulnasoft/djinit/actions/workflows/ci.yml?query=branch%3Amaster)
 [![Documentation Status](https://readthedocs.org/projects/djinit/badge/?version=latest)](https://djinit.readthedocs.io/en/latest/?badge=latest)
-[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/djinit/djinit/master.svg)](https://results.pre-commit.ci/latest/github/djinit/djinit/master)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/khulnasoft/djinit/master.svg)](https://results.pre-commit.ci/latest/github/khulnasoft/djinit/master)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
 
-[![Updates](https://pyup.io/repos/github/djinit/djinit/shield.svg)](https://pyup.io/repos/github/djinit/djinit/)
-[![Join our Discord](https://img.shields.io/badge/Discord-djinit-5865F2?style=flat&logo=discord&logoColor=white)](https://discord.gg/rAWFUP47d2)
-[![Code Helpers Badge](https://www.codetriage.com/djinit/djinit/badges/users.svg)](https://www.codetriage.com/djinit/djinit)
+[![Updates](https://pyup.io/repos/github/khulnasoft/djinit/shield.svg)](https://pyup.io/repos/github/khulnasoft/djinit/)
+[![Join our Discord](https://img.shields.io/badge/Discord-cookiecutter-5865F2?style=flat&logo=discord&logoColor=white)](https://discord.gg/rAWFUP47d2)
+[![Code Helpers Badge](https://www.codetriage.com/khulnasoft/djinit/badges/users.svg)](https://www.codetriage.com/khulnasoft/djinit)
 
-Powered by [Djinit](https://github.com/khulnasoft/djinit), Djinit Django is a framework for jumpstarting
+Powered by [Cookiecutter](https://github.com/cookiecutter/cookiecutter), Cookiecutter Django is a framework for jumpstarting
 production-ready Django projects quickly.
 
 - Documentation: <https://djinit.readthedocs.io/en/latest/>
 - See [Troubleshooting](https://djinit.readthedocs.io/en/latest/5-help/troubleshooting.html) for common errors and obstacles
-- If you have problems with Djinit Django, please open [issues](https://github.com/khulnasoft/djinit/issues/new) don't send
+- If you have problems with Cookiecutter Django, please open [issues](https://github.com/khulnasoft/djinit/issues/new) don't send
   emails to the maintainers.
 
 ## Features
@@ -80,15 +80,15 @@ PyUp brings you automated security and dependency updates used by Google and oth
 ## Usage
 
 Let's pretend you want to create a Django project called "redditclone". Rather than using `startproject`
-and then editing the results to include your name, email, and various configuration issues that always get forgotten until the worst possible moment, get [djinit](https://github.com/khulnasoft/djinit) to do all the work.
+and then editing the results to include your name, email, and various configuration issues that always get forgotten until the worst possible moment, get [cookiecutter](https://github.com/cookiecutter/cookiecutter) to do all the work.
 
-First, get Djinit. Trust me, it's awesome:
+First, get Cookiecutter. Trust me, it's awesome:
 
-    $ pip install "djinit>=1.7.0"
+    $ pip install "cookiecutter>=1.7.0"
 
 Now run it against this repo:
 
-    $ djinit https://github.com/khulnasoft/djinit
+    $ cookiecutter https://github.com/khulnasoft/djinit
 
 You'll be prompted for some values. Provide them, then a Django project will be created for you.
 
@@ -207,7 +207,7 @@ You may notice that some elements of this project do not exactly match what we d
 
 ## For PyUp Users
 
-If you are using [PyUp](https://pyup.io) to keep your dependencies updated and secure, use the code _djinit_ during checkout to get 15% off every month.
+If you are using [PyUp](https://pyup.io) to keep your dependencies updated and secure, use the code _cookiecutter_ during checkout to get 15% off every month.
 
 ## "Your Stuff"
 
@@ -229,13 +229,13 @@ This is what I want. _It might not be what you want._ Don't worry, you have opti
 ### Fork This
 
 If you have differences in your preferred setup, I encourage you to fork this to create your own version.
-Once you have your fork working, let me know and I'll add it to a '_Similar Djinit Templates_' list here.
+Once you have your fork working, let me know and I'll add it to a '_Similar Cookiecutter Templates_' list here.
 It's up to you whether to rename your fork.
 
 If you do rename your fork, I encourage you to submit it to the following places:
 
-- [djinit](https://github.com/khulnasoft/djinit) so it gets listed in the README as a template.
-- The djinit [grid](https://www.djangopackages.com/grids/g/djinits/) on Django Packages.
+- [cookiecutter](https://github.com/cookiecutter/cookiecutter) so it gets listed in the README as a template.
+- The cookiecutter [grid](https://www.djangopackages.com/grids/g/cookiecutters/) on Django Packages.
 
 ### Submit a Pull Request
 
@@ -245,18 +245,18 @@ experience better.
 ## Articles
 
 - [Why djinit is Essential for Your Next Django Project](https://medium.com/@millsks/why-djinit-is-essential-for-your-next-django-project-7d3c00cdce51) - Aug. 4, 2024
-- [How to Make Your Own Django Djinit Template!](https://medium.com/@FatemeFouladkar/how-to-make-your-own-django-djinit-template-a753d4cbb8c2) - Aug. 10, 2023
-- [Djinit Django With Amazon RDS](https://haseeburrehman.com/posts/djinit-with-amazon-rds/) - Apr, 2, 2021
+- [How to Make Your Own Django Cookiecutter Template!](https://medium.com/@FatemeFouladkar/how-to-make-your-own-django-cookiecutter-template-a753d4cbb8c2) - Aug. 10, 2023
+- [Cookiecutter Django With Amazon RDS](https://haseeburrehman.com/posts/djinit-with-amazon-rds/) - Apr, 2, 2021
 - [Complete Walkthrough: Blue/Green Deployment to AWS ECS using GitHub actions](https://github.com/Andrew-Chen-Wang/djinit-ecs-github) - June 10, 2020
-- [Using djinit with Google Cloud Storage](https://ahhda.github.io/cloud/gce/django/2019/03/12/using-django-djinit-cloud-storage.html) - Mar. 12, 2019
+- [Using djinit with Google Cloud Storage](https://ahhda.github.io/cloud/gce/django/2019/03/12/using-django-cookiecutter-cloud-storage.html) - Mar. 12, 2019
 - [djinit with Nginx, Route 53 and ELB](https://msaizar.com/blog/djinit-nginx-route-53-and-elb/) - Feb. 12, 2018
 - [djinit and Amazon RDS](https://msaizar.com/blog/djinit-and-amazon-rds/) - Feb. 7, 2018
-- [Using Djinit to Jumpstart a Django Project on Windows with PyCharm](https://joshuahunter.com/posts/using-djinit-to-jumpstart-a-django-project-on-windows-with-pycharm/) - May 19, 2017
-- [Exploring with Djinit](http://www.snowboardingcoder.com/django/2016/12/03/exploring-with-djinit/) - Dec. 3, 2016
-- [Introduction to Djinit](http://krzysztofzuraw.com/blog/2016/django-djinit.html) - Feb. 19, 2016
+- [Using Cookiecutter to Jumpstart a Django Project on Windows with PyCharm](https://joshuahunter.com/posts/using-cookiecutter-to-jumpstart-a-django-project-on-windows-with-pycharm/) - May 19, 2017
+- [Exploring with Cookiecutter](http://www.snowboardingcoder.com/django/2016/12/03/exploring-with-cookiecutter/) - Dec. 3, 2016
+- [Introduction to Djinit](http://krzysztofzuraw.com/blog/2016/django-cookiecutter.html) - Feb. 19, 2016
 - [Django and GitLab - Running Continuous Integration and tests with your FREE account](http://dezoito.github.io/2016/05/11/django-gitlab-continuous-integration-phantomjs.html) - May. 11, 2016
 - [Development and Deployment of Djinit on Fedora](https://realpython.com/blog/python/development-and-deployment-of-djinit-on-fedora/) - Jan. 18, 2016
 - [Development and Deployment of Djinit via Docker](https://realpython.com/blog/python/development-and-deployment-of-djinit-via-docker/) - Dec. 29, 2015
-- [How to create a Django Application using Djinit and Django 1.8](https://www.swapps.io/blog/how-to-create-a-django-application-using-djinit-and-django-1-8/) - Sept. 12, 2015
+- [How to create a Django Application using Cookiecutter and Django 1.8](https://www.swapps.io/blog/how-to-create-a-django-application-using-cookiecutter-and-django-1-8/) - Sept. 12, 2015
 
 Have a blog or online publication? Write about your djinit tips and tricks, then send us a pull request with the link.

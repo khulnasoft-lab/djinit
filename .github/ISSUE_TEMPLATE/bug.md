@@ -14,7 +14,7 @@ labels: bug
 
 - Host system configuration:
 
-  - Version of djinit CLI (get it with `djinit --version`):
+  - Version of cookiecutter CLI (get it with `cookiecutter --version`):
   - OS name and version:
 
     On Linux, run
@@ -45,8 +45,8 @@ labels: bug
   - docker compose version (if using Docker), run `docker compose --version`:
   - ...
 
-- Options selected and/or [replay file](https://djinit.readthedocs.io/en/latest/advanced/replay.html):
-  On Linux and macOS: `cat ${HOME}/.djinit_replay/djinit.json`
+- Options selected and/or [replay file](https://cookiecutter.readthedocs.io/en/latest/advanced/replay.html):
+  On Linux and macOS: `cat ${HOME}/.cookiecutter_replay/djinit.json`
   (Please, take care to remove sensitive information)
 
 ```json
@@ -57,7 +57,7 @@ labels: bug
 Logs:
 <details>
 <pre>
-$ djinit https://github.com/khulnasoft/djinit
+$ cookiecutter https://github.com/khulnasoft/djinit
 project_name [Project Name]: ...
 </pre>
 </details>

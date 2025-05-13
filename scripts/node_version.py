@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).parent.parent
-TEMPLATED_ROOT = ROOT / "{{djinit.project_slug}}"
+TEMPLATED_ROOT = ROOT / "{{cookiecutter.project_slug}}"
 DOCKERFILE = TEMPLATED_ROOT / "compose" / "local" / "node" / "Dockerfile"
 PROD_DOCKERFILE = TEMPLATED_ROOT / "compose" / "production" / "django" / "Dockerfile"
 PACKAGE_JSON = TEMPLATED_ROOT / "package.json"

@@ -10,8 +10,8 @@ set -x
 mkdir -p .cache/docker
 cd .cache/docker
 
-# create the project using the default settings in djinit.json
-uv run djinit ../../ --no-input --overwrite-if-exists use_docker=y "$@"
+# create the project using the default settings in cookiecutter.json
+uv run cookiecutter ../../ --no-input --overwrite-if-exists use_docker=y "$@"
 cd my_awesome_project
 
 # make sure all images build

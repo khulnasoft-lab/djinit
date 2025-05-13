@@ -1,5 +1,5 @@
 # Change Log
-All enhancements and patches to Djinit Django will be documented in this file.
+All enhancements and patches to Cookiecutter Django will be documented in this file.
 
 <!-- GENERATOR_PLACEHOLDER -->
 
@@ -998,7 +998,7 @@ All enhancements and patches to Djinit Django will be documented in this file.
 
 - Update pre-commit to 4.0.1 ([#5445](https://github.com/khulnasoft/djinit/pull/5445))
 
-- Bump amazon/aws-cli from 2.18.0 to 2.18.1 in /{{djinit.project_slug}}/compose/production/aws ([#5443](https://github.com/khulnasoft/djinit/pull/5443))
+- Bump amazon/aws-cli from 2.18.0 to 2.18.1 in /{{cookiecutter.project_slug}}/compose/production/aws ([#5443](https://github.com/khulnasoft/djinit/pull/5443))
 
 - Auto-update pre-commit hooks ([#5442](https://github.com/khulnasoft/djinit/pull/5442))
 
@@ -1019,7 +1019,7 @@ All enhancements and patches to Djinit Django will be documented in this file.
 
 - Update sphinx-rtd-theme to 3.0.0 ([#5437](https://github.com/khulnasoft/djinit/pull/5437))
 
-- Bump amazon/aws-cli from 2.17.0 to 2.18.0 in /{{djinit.project_slug}}/compose/production/aws ([#5436](https://github.com/khulnasoft/djinit/pull/5436))
+- Bump amazon/aws-cli from 2.17.0 to 2.18.0 in /{{cookiecutter.project_slug}}/compose/production/aws ([#5436](https://github.com/khulnasoft/djinit/pull/5436))
 
 ## 2024.10.05
 
@@ -1142,7 +1142,7 @@ All enhancements and patches to Djinit Django will be documented in this file.
 
 - Update sphinx-autobuild to 2024.9.19 ([#5386](https://github.com/khulnasoft/djinit/pull/5386))
 
-- Bump traefik from 3.1.3 to 3.1.4 in /{{djinit.project_slug}}/compose/production/traefik ([#5389](https://github.com/khulnasoft/djinit/pull/5389))
+- Bump traefik from 3.1.3 to 3.1.4 in /{{cookiecutter.project_slug}}/compose/production/traefik ([#5389](https://github.com/khulnasoft/djinit/pull/5389))
 
 - Update ruff to 0.6.6 ([#5388](https://github.com/khulnasoft/djinit/pull/5388))
 
@@ -1791,13 +1791,13 @@ All enhancements and patches to Djinit Django will be documented in this file.
 
 ### Updated
 
-- Bump python from 3.12.3-slim-bookworm to 3.12.4-slim-bookworm in /{{djinit.project_slug}}/compose/local/docs ([#5129](https://github.com/khulnasoft/djinit/pull/5129))
+- Bump python from 3.12.3-slim-bookworm to 3.12.4-slim-bookworm in /{{cookiecutter.project_slug}}/compose/local/docs ([#5129](https://github.com/khulnasoft/djinit/pull/5129))
 
-- Bump python from 3.12.3-slim-bookworm to 3.12.4-slim-bookworm in /{{djinit.project_slug}}/compose/local/django ([#5130](https://github.com/khulnasoft/djinit/pull/5130))
+- Bump python from 3.12.3-slim-bookworm to 3.12.4-slim-bookworm in /{{cookiecutter.project_slug}}/compose/local/django ([#5130](https://github.com/khulnasoft/djinit/pull/5130))
 
-- Bump python from 3.12.3-slim-bookworm to 3.12.4-slim-bookworm in /{{djinit.project_slug}}/compose/production/django ([#5132](https://github.com/khulnasoft/djinit/pull/5132))
+- Bump python from 3.12.3-slim-bookworm to 3.12.4-slim-bookworm in /{{cookiecutter.project_slug}}/compose/production/django ([#5132](https://github.com/khulnasoft/djinit/pull/5132))
 
-- Bump amazon/aws-cli from 2.16.6 to 2.16.8 in /{{djinit.project_slug}}/compose/production/aws ([#5138](https://github.com/khulnasoft/djinit/pull/5138))
+- Bump amazon/aws-cli from 2.16.6 to 2.16.8 in /{{cookiecutter.project_slug}}/compose/production/aws ([#5138](https://github.com/khulnasoft/djinit/pull/5138))
 
 - Update ruff to 0.4.9 ([#5139](https://github.com/khulnasoft/djinit/pull/5139))
 
@@ -2664,7 +2664,7 @@ All enhancements and patches to Djinit Django will be documented in this file.
 
 ### Updated
 
-- Bump browser-sync from 2.29.3 to 3.0.2 in /{{djinit.project_slug}} ([#4765](https://github.com/khulnasoft/djinit/pull/4765))
+- Bump browser-sync from 2.29.3 to 3.0.2 in /{{cookiecutter.project_slug}} ([#4765](https://github.com/khulnasoft/djinit/pull/4765))
 
 ## 2024.01.19
 
@@ -2695,7 +2695,7 @@ All enhancements and patches to Djinit Django will be documented in this file.
 
 ### Updated
 
-- Bump sass-loader from 13.3.3 to 14.0.0 in /{{djinit.project_slug}} ([#4791](https://github.com/khulnasoft/djinit/pull/4791))
+- Bump sass-loader from 13.3.3 to 14.0.0 in /{{cookiecutter.project_slug}} ([#4791](https://github.com/khulnasoft/djinit/pull/4791))
 
 ## 2024.01.15
 
@@ -3860,7 +3860,7 @@ All enhancements and patches to Djinit Django will be documented in this file.
 
 - Update sentry-sdk to 1.24.0 ([#4349](https://github.com/khulnasoft/djinit/pull/4349))
 
-- Bump webpack-bundle-tracker from 1.8.1 to 2.0.0 in /{{djinit.project_slug}} ([#4347](https://github.com/khulnasoft/djinit/pull/4347))
+- Bump webpack-bundle-tracker from 1.8.1 to 2.0.0 in /{{cookiecutter.project_slug}} ([#4347](https://github.com/khulnasoft/djinit/pull/4347))
 
 - Update django-webpack-loader to 2.0.0 ([#4345](https://github.com/khulnasoft/djinit/pull/4345))
 
@@ -4874,7 +4874,7 @@ All enhancements and patches to Djinit Django will be documented in this file.
 ## 2022.06.13
 
 ### Updated
-- Update djinit to 2.1.1 ([#3727](https://github.com/khulnasoft/djinit/pull/3727))
+- Update cookiecutter to 2.1.1 ([#3727](https://github.com/khulnasoft/djinit/pull/3727))
 
 ## 2022.06.11
 
@@ -5612,7 +5612,7 @@ All enhancements and patches to Djinit Django will be documented in this file.
 
 ## [2021-10-22]
 ### Changed
-- Move repo under djinit organisation ([#3357](https://github.com/khulnasoft/djinit/pull/3357))
+- Move repo under cookiecutter organisation ([#3357](https://github.com/khulnasoft/djinit/pull/3357))
 
 ## [2021-10-18]
 ### Updated
@@ -5882,7 +5882,7 @@ All enhancements and patches to Djinit Django will be documented in this file.
 - Update pytest to 6.2.4 ([#3156](https://github.com/khulnasoft/djinit/pull/3156))
 - Bump peter-evans/create-pull-request from 3.8.2 to 3.9.2 ([#3179](https://github.com/khulnasoft/djinit/pull/3179))
 - Update sphinx to 4.0.1 ([#3169](https://github.com/khulnasoft/djinit/pull/3169))
-- Update djinit to 1.7.3 ([#3180](https://github.com/khulnasoft/djinit/pull/3180))
+- Update cookiecutter to 1.7.3 ([#3180](https://github.com/khulnasoft/djinit/pull/3180))
 - Update django to 3.1.11 ([#3178](https://github.com/khulnasoft/djinit/pull/3178))
 
 ## [2021-05-06]
@@ -6779,7 +6779,7 @@ d changed 'admin' url on `config/urls.py`, to stay the same as generated by djan
 
 ##[2016-06-25]
 ## Changed
-- use `https` instead `ssh` to clone [djinit-webpack](https://github.com/hzdg/djinit-webpack) if `Webpack` is selected as `JS Task Runner` - fix issue #647 (@luzfcb and @resakse)
+- use `https` instead `ssh` to clone [cookiecutter-webpack](https://github.com/hzdg/cookiecutter-webpack) if `Webpack` is selected as `JS Task Runner` - fix issue #647 (@luzfcb and @resakse)
 
 ##[2016-06-24]
 ## Added
@@ -6831,7 +6831,7 @@ d changed 'admin' url on `config/urls.py`, to stay the same as generated by djan
 ##[2016-06-03]
 ### Added
 - Documentation for debugging with Docker (@mjsisley)
-- Apache 2 License option in `djinit.json` (@dot2dotseurat)
+- Apache 2 License option in `cookiecutter.json` (@dot2dotseurat)
 - Removed unnecessary version check from `pre_gen_project.py` (@suledev)
 - Add gulp alternative as a js task runner and fix navbar style issue (@viviangb and @xpostudio4)
 
@@ -6899,14 +6899,14 @@ d changed 'admin' url on `config/urls.py`, to stay the same as generated by djan
 
 ### [2016-04-25]
 ### Added
-- Check to confirm that the user has a modern version of Djinit. (@pydanny)
+- Check to confirm that the user has a modern version of Cookiecutter. (@pydanny)
 
 ### Removed
 - Removed hitch per #529 (@pydanny)
 
 ### [2016-04-20]
 ### Changed
-- Default to today's date in djinit.json. (@audreyr)
+- Default to today's date in cookiecutter.json. (@audreyr)
 - Change repo_name to project_slug for clarity. (@audreyr)
 - Transform project name to lowercase for slug. (@audreyr)
 
@@ -6923,7 +6923,7 @@ d changed 'admin' url on `config/urls.py`, to stay the same as generated by djan
 
 ### [2016-04-17]
 ### Added
-- "Built with Djinit Django" badge to generated project README (@audreyr)
+- "Built with Cookiecutter Django" badge to generated project README (@audreyr)
 - New introductory article (@krzysztofzuraw)
 
 ### Changed
@@ -6985,7 +6985,7 @@ d changed 'admin' url on `config/urls.py`, to stay the same as generated by djan
 ### Changed
 - Update version of Django, celery, django-test-plus (@luzfcb)
 - Update version of Hitch tests dependencies: jupyter_client (@luzfcb)
-- Update 'now' date in djinit.json (@luzfcb)
+- Update 'now' date in cookiecutter.json (@luzfcb)
 - Update the usage example in README (@luzfcb)
 
 ## [2016-03-01]
@@ -7040,7 +7040,7 @@ d changed 'admin' url on `config/urls.py`, to stay the same as generated by djan
 ### Changed
 - Update AngularJS version to 1.4.9 (@luzfcb)
 - Update jQuery version to 2.2.0 (@luzfcb)
-- Update 'now' date in djinit.json (@luzfcb)
+- Update 'now' date in cookiecutter.json (@luzfcb)
 - Update version of boto, celery, django_coverage_plugin, django-storages-redux, flake8, gevent, gunicorn, pep8, pytest, tox, Werkzeug (@luzfcb)
 - Update version of Hitch tests dependencies: colorama, decorator, hitchpostgres, hitchpython, hitchredis, hitchselenium, hitchserve, hitchsystem, hitchtest, ipython, patool, pickleshare, psutil, python-build, requests, selenium, tblib, traitlets (@luzfcb)
 
@@ -7129,7 +7129,7 @@ d changed 'admin' url on `config/urls.py`, to stay the same as generated by djan
 
 ## [2015-12-11]
 ### Changed
-- Fixed issue #436 - djinit variable name was renamed from `celery_support` to `use_celery` in `tests/engine.py` (@luzfcb @otakucode)
+- Fixed issue #436 - cookiecutter variable name was renamed from `celery_support` to `use_celery` in `tests/engine.py` (@luzfcb @otakucode)
 - Updated Heroku runtime.txt for python 3.5.1 (@yunti)
 
 ## [2015-12-06]
@@ -7159,8 +7159,8 @@ d changed 'admin' url on `config/urls.py`, to stay the same as generated by djan
 ## [2015-11-23]
 ### Changed
 - Update AngularJS version to 1.4.8 (@luzfcb)
-- Update version of djinit, pytest, tox, whitenoise, django-test-plus, django_coverage_plugin, Werkzeug, hitchserve, tornado, unixpackage (@luzfcb)
-- Update 'now' date in djinit.json (@luzfcb)
+- Update version of cookiecutter, pytest, tox, whitenoise, django-test-plus, django_coverage_plugin, Werkzeug, hitchserve, tornado, unixpackage (@luzfcb)
+- Update 'now' date in cookiecutter.json (@luzfcb)
 - `sh` package version pinned to `1.11` (@luzfcb)
 
 ## [2015-11-22]
@@ -7242,9 +7242,9 @@ d changed 'admin' url on `config/urls.py`, to stay the same as generated by djan
 
 ## [2015-11-04]
 ### Changed
-- Update version of Django, djinit, celery, coverage, django-mailgun, django-redis, factory_boy, flake8, pytest and pytz (@luzfcb)
+- Update version of Django, cookiecutter, celery, coverage, django-mailgun, django-redis, factory_boy, flake8, pytest and pytz (@luzfcb)
 - Update AngularJS version to 1.4.7 (@luzfcb)
-- Update 'now' date in djinit.json (@luzfcb)
+- Update 'now' date in cookiecutter.json (@luzfcb)
 
 ## [2015-10-28]
 ### Changed
@@ -7317,9 +7317,9 @@ d changed 'admin' url on `config/urls.py`, to stay the same as generated by djan
 - Fixed Sentry logging with celery (@jayfk)
 - Added pep8 and pyflakes to requirements (@jayfk)
 - Fixed url() arguments in urls.py because String view arguments to url() is deprecated in django 1.9 (@siauPatrick)
-- Update version of djinit, coverage, django-environ, django-extensions, hitchpython, hitchselenium, hitchserve, pytest, pytz, whitenoise (@luzfcb)
+- Update version of cookiecutter, coverage, django-environ, django-extensions, hitchpython, hitchselenium, hitchserve, pytest, pytz, whitenoise (@luzfcb)
 - Update the usage example in README (@luzfcb)
-- Update 'now' date in djinit.json (@luzfcb)
+- Update 'now' date in cookiecutter.json (@luzfcb)
 
 ## [2015-09-29]
 ### Changed

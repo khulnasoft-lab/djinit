@@ -34,7 +34,7 @@ def remove_gplv3_files():
 
 
 def remove_custom_user_manager_files():
-    users_path = Path("{{djinit.project_slug}}", "users")
+    users_path = Path("{{cookiecutter.project_slug}}", "users")
     (users_path / "managers.py").unlink()
     (users_path / "tests" / "test_managers.py").unlink()
 
@@ -61,7 +61,7 @@ def remove_docker_files():
     ]
     for file_name in file_names:
         Path(file_name).unlink()
-    if "{{ djinit.editor }}" == "PyCharm":
+    if "{{ cookiecutter.editor }}" == "PyCharm":
         file_names = ["docker_compose_up_django.xml", "docker_compose_up_docs.xml"]
         for file_name in file_names:
             Path(".idea", "runConfigurations", file_name).unlink()
@@ -78,7 +78,7 @@ def remove_utility_files():
 def remove_heroku_files():
     file_names = ["Procfile", "requirements.txt"]
     for file_name in file_names:
-        if file_name == "requirements.txt" and "{{ djinit.ci_tool }}".lower() == "travis":
+        if file_name == "requirements.txt" and "{{ cookiecutter.ci_tool }}".lower() == "travis":
             # don't remove the file if we are using travisci but not using heroku
             continue
         Path(file_name).unlink()
@@ -86,7 +86,7 @@ def remove_heroku_files():
 
 
 def remove_sass_files():
-    shutil.rmtree(Path("{{djinit.project_slug}}", "static", "sass"))
+    shutil.rmtree(Path("{{cookiecutter.project_slug}}", "static", "sass"))
 
 
 def remove_gulp_files():
@@ -101,7 +101,7 @@ def remove_webpack_files():
 
 
 def remove_vendors_js():
-    vendors_js_path = Path("{{ djinit.project_slug }}", "static", "js", "vendors.js")
+    vendors_js_path = Path("{{ cookiecutter.project_slug }}", "static", "js", "vendors.js")
     if vendors_js_path.exists():
         vendors_js_path.unlink()
 
@@ -207,8 +207,8 @@ def remove_prettier_pre_commit():
 def remove_celery_files():
     file_paths = [
         Path("config", "celery_app.py"),
-        Path("{{ djinit.project_slug }}", "users", "tasks.py"),
-        Path("{{ djinit.project_slug }}", "users", "tests", "test_tasks.py"),
+        Path("{{ cookiecutter.project_slug }}", "users", "tasks.py"),
+        Path("{{ cookiecutter.project_slug }}", "users", "tests", "test_tasks.py"),
     ]
     for file_path in file_paths:
         file_path.unlink()
@@ -401,12 +401,12 @@ def remove_aws_dockerfile():
 
 def remove_drf_starter_files():
     Path("config", "api_router.py").unlink()
-    shutil.rmtree(Path("{{djinit.project_slug}}", "users", "api"))
-    shutil.rmtree(Path("{{djinit.project_slug}}", "users", "tests", "api"))
+    shutil.rmtree(Path("{{cookiecutter.project_slug}}", "users", "api"))
+    shutil.rmtree(Path("{{cookiecutter.project_slug}}", "users", "tests", "api"))
 
 
 def main():
-    debug = "{{ djinit.debug }}".lower() == "y"
+    debug = "{{ cookiecutter.debug }}".lower() == "y"
 
     set_flags_in_envs(
         DEBUG_VALUE if debug else generate_random_user(),
@@ -415,32 +415,32 @@ def main():
     )
     set_flags_in_settings_files()
 
-    if "{{ djinit.open_source_license }}" == "Not open source":
+    if "{{ cookiecutter.open_source_license }}" == "Not open source":
         remove_open_source_files()
-    if "{{ djinit.open_source_license}}" != "GPLv3":
+    if "{{ cookiecutter.open_source_license}}" != "GPLv3":
         remove_gplv3_files()
 
-    if "{{ djinit.username_type }}" == "username":
+    if "{{ cookiecutter.username_type }}" == "username":
         remove_custom_user_manager_files()
 
-    if "{{ djinit.editor }}" != "PyCharm":
+    if "{{ cookiecutter.editor }}" != "PyCharm":
         remove_pycharm_files()
 
-    if "{{ djinit.use_docker }}".lower() == "y":
+    if "{{ cookiecutter.use_docker }}".lower() == "y":
         remove_utility_files()
-        if "{{ djinit.cloud_provider }}".lower() != "none":
+        if "{{ cookiecutter.cloud_provider }}".lower() != "none":
             remove_nginx_docker_files()
     else:
         remove_docker_files()
 
-    if "{{ djinit.use_docker }}".lower() == "y" and "{{ djinit.cloud_provider}}" != "AWS":
+    if "{{ cookiecutter.use_docker }}".lower() == "y" and "{{ cookiecutter.cloud_provider}}" != "AWS":
         remove_aws_dockerfile()
 
-    if "{{ djinit.use_heroku }}".lower() == "n":
+    if "{{ cookiecutter.use_heroku }}".lower() == "n":
         remove_heroku_files()
 
-    if "{{ djinit.use_docker }}".lower() == "n" and "{{ djinit.use_heroku }}".lower() == "n":
-        if "{{ djinit.keep_local_envs_in_vcs }}".lower() == "y":
+    if "{{ cookiecutter.use_docker }}".lower() == "n" and "{{ cookiecutter.use_heroku }}".lower() == "n":
+        if "{{ cookiecutter.keep_local_envs_in_vcs }}".lower() == "y":
             print(
                 INFO + ".env(s) are only utilized when Docker Compose and/or "
                 "Heroku support is enabled so keeping them does not make sense "
@@ -450,51 +450,51 @@ def main():
     else:
         append_to_gitignore_file(".env")
         append_to_gitignore_file(".envs/*")
-        if "{{ djinit.keep_local_envs_in_vcs }}".lower() == "y":
+        if "{{ cookiecutter.keep_local_envs_in_vcs }}".lower() == "y":
             append_to_gitignore_file("!.envs/.local/")
 
-    if "{{ djinit.frontend_pipeline }}" in ["None", "Django Compressor"]:
+    if "{{ cookiecutter.frontend_pipeline }}" in ["None", "Django Compressor"]:
         remove_gulp_files()
         remove_webpack_files()
         remove_sass_files()
         remove_packagejson_file()
         remove_prettier_pre_commit()
-        if "{{ djinit.use_docker }}".lower() == "y":
+        if "{{ cookiecutter.use_docker }}".lower() == "y":
             remove_node_dockerfile()
     else:
         handle_js_runner(
-            "{{ djinit.frontend_pipeline }}",
-            use_docker=("{{ djinit.use_docker }}".lower() == "y"),
-            use_async=("{{ djinit.use_async }}".lower() == "y"),
+            "{{ cookiecutter.frontend_pipeline }}",
+            use_docker=("{{ cookiecutter.use_docker }}".lower() == "y"),
+            use_async=("{{ cookiecutter.use_async }}".lower() == "y"),
         )
 
-    if "{{ djinit.cloud_provider }}" == "None" and "{{ djinit.use_docker }}".lower() == "n":
+    if "{{ cookiecutter.cloud_provider }}" == "None" and "{{ cookiecutter.use_docker }}".lower() == "n":
         print(
             WARNING + "You chose to not use any cloud providers nor Docker, "
             "media files won't be served in production." + TERMINATOR
         )
 
-    if "{{ djinit.use_celery }}".lower() == "n":
+    if "{{ cookiecutter.use_celery }}".lower() == "n":
         remove_celery_files()
-        if "{{ djinit.use_docker }}".lower() == "y":
+        if "{{ cookiecutter.use_docker }}".lower() == "y":
             remove_celery_compose_dirs()
 
-    if "{{ djinit.ci_tool }}" != "Travis":
+    if "{{ cookiecutter.ci_tool }}" != "Travis":
         remove_dottravisyml_file()
 
-    if "{{ djinit.ci_tool }}" != "Gitlab":
+    if "{{ cookiecutter.ci_tool }}" != "Gitlab":
         remove_dotgitlabciyml_file()
 
-    if "{{ djinit.ci_tool }}" != "Github":
+    if "{{ cookiecutter.ci_tool }}" != "Github":
         remove_dotgithub_folder()
 
-    if "{{ djinit.ci_tool }}" != "Drone":
+    if "{{ cookiecutter.ci_tool }}" != "Drone":
         remove_dotdrone_file()
 
-    if "{{ djinit.use_drf }}".lower() == "n":
+    if "{{ cookiecutter.use_drf }}".lower() == "n":
         remove_drf_starter_files()
 
-    if "{{ djinit.use_async }}".lower() == "n":
+    if "{{ cookiecutter.use_async }}".lower() == "n":
         remove_async_files()
 
     print(SUCCESS + "Project initialized, keep up the good work!" + TERMINATOR)

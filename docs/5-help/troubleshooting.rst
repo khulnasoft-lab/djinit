@@ -1,7 +1,7 @@
 Troubleshooting
 ===============
 
-This page contains some advice about errors and problems commonly encountered during the development of Djinit Django applications.
+This page contains some advice about errors and problems commonly encountered during the development of Cookiecutter Django applications.
 
 Server Error on sign-up/log-in
 ------------------------------
@@ -53,7 +53,7 @@ Others
 
 #. ``project_slug`` must be a valid Python module name or you will have issues on imports.
 
-#. ``jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'now'.``: please upgrade your djinit version to >= 1.4 (see `#528`_)
+#. ``jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'now'.``: please upgrade your cookiecutter version to >= 1.4 (see `#528`_)
 
 #. New apps not getting created in project root: This is the expected behavior, because djinit does not change the way that django startapp works, you'll have to fix this manually (see `#1725`_)
 

@@ -1,11 +1,11 @@
 .. djinit documentation master file.
 
-Welcome to Djinit Django's documentation!
+Welcome to Cookiecutter Django's documentation!
 ===============================================
 
-Powered by Djinit_, Djinit Django is a project template for jumpstarting production-ready Django projects. The template offers a number of generation options, we invite you to check the :ref:`dedicated page <template-options>` to learn more about each of them.
+Powered by Cookiecutter_, Cookiecutter Django is a project template for jumpstarting production-ready Django projects. The template offers a number of generation options, we invite you to check the :ref:`dedicated page <template-options>` to learn more about each of them.
 
-.. _djinit: https://github.com/khulnasoft/djinit
+.. _cookiecutter: https://github.com/cookiecutter/cookiecutter
 
 .. toctree::
    :maxdepth: 2

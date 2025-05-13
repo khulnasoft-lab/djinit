@@ -14,6 +14,6 @@ pin: True
 label_prs: update
 
 requirements:
-  - "{{djinit.project_slug}}/requirements/base.txt"
-  - "{{djinit.project_slug}}/requirements/local.txt"
-  - "{{djinit.project_slug}}/requirements/production.txt"
+  - "{{cookiecutter.project_slug}}/requirements/base.txt"
+  - "{{cookiecutter.project_slug}}/requirements/local.txt"
+  - "{{cookiecutter.project_slug}}/requirements/production.txt"

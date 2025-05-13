@@ -169,19 +169,19 @@ it needs to do is to run ``docker compose -f docker-compose.production.yml up`` 
 
 If you are using ``supervisor``, you can use this file as a starting point::
 
-    [program:{{djinit.project_slug}}]
+    [program:{{cookiecutter.project_slug}}]
     command=docker compose -f docker-compose.production.yml up
-    directory=/path/to/{{djinit.project_slug}}
+    directory=/path/to/{{cookiecutter.project_slug}}
     redirect_stderr=true
     autostart=true
     autorestart=true
     priority=10
 
-Move it to ``/etc/supervisor/conf.d/{{djinit.project_slug}}.conf`` and run::
+Move it to ``/etc/supervisor/conf.d/{{cookiecutter.project_slug}}.conf`` and run::
 
     supervisorctl reread
     supervisorctl update
-    supervisorctl start {{djinit.project_slug}}
+    supervisorctl start {{cookiecutter.project_slug}}
 
 For status check, run::
 

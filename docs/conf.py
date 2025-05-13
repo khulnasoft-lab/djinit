@@ -41,7 +41,7 @@ source_suffix = {
 master_doc = "index"
 
 # General information about the project.
-project = "Djinit Django"
+project = "Cookiecutter Django"
 copyright = f"2013-{now.year}, Daniel Roy Greenfeld"
 
 # The version info for the project you're documenting, acts as replacement for
@@ -219,8 +219,8 @@ latex_documents = [
 man_pages = [
     (
         "index",
-        "Djinit Django",
-        "Djinit Django documentation",
+        "Cookiecutter Django",
+        "Cookiecutter Django documentation",
         ["Daniel Roy Greenfeld"],
         1,
     ),
@@ -238,11 +238,11 @@ man_pages = [
 texinfo_documents = [
     (
         "index",
-        "Djinit Django",
-        "Djinit Django documentation",
+        "Cookiecutter Django",
+        "Cookiecutter Django documentation",
         "Daniel Roy Greenfeld",
-        "Djinit Django",
-        "A Djinit template for creating production-ready Django projects quickly.",
+        "Cookiecutter Django",
+        "A Cookiecutter template for creating production-ready Django projects quickly.",
         "Miscellaneous",
     )
 ]

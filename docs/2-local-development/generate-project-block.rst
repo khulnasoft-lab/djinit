@@ -1,6 +1,6 @@
 Generate a new djinit project: ::
 
-    $ djinit gh:djinit/djinit
+    $ cookiecutter gh:khulnasoft/djinit
 
 For more information refer to
 :ref:`Project Generation Options <template-options>`.

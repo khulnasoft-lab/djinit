@@ -12,7 +12,7 @@ Make sure to have the following on your host:
 * Python 3.12
 * PostgreSQL_.
 * Redis_, if using Celery
-* Djinit_
+* Cookiecutter_
 
 First things first.
 
@@ -85,7 +85,7 @@ First things first.
 
 .. _PostgreSQL: https://www.postgresql.org/download/
 .. _Redis: https://redis.io/download
-.. _CookieCutter: https://github.com/khulnasoft/djinit
+.. _CookieCutter: https://github.com/cookiecutter/cookiecutter
 .. _createdb: https://www.postgresql.org/docs/current/static/app-createdb.html
 .. _initial PostgreSQL set up: https://web.archive.org/web/20190303010033/http://suite.opengeo.org/docs/latest/dataadmin/pgGettingStarted/firstconnect.html
 .. _postgres documentation: https://www.postgresql.org/docs/current/static/auth-pg-hba-conf.html
@@ -251,4 +251,4 @@ If you've opted for Gulp or Webpack as front-end pipeline, the project comes con
 Summary
 -------
 
-Congratulations, you have made it! Keep on reading to unleash full potential of Djinit Django.
+Congratulations, you have made it! Keep on reading to unleash full potential of Cookiecutter Django.

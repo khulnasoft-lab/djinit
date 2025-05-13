@@ -10,8 +10,8 @@ set -x
 mkdir -p .cache/bare
 cd .cache/bare
 
-# create the project using the default settings in djinit.json
-uv run djinit ../../ --no-input --overwrite-if-exists use_docker=n "$@"
+# create the project using the default settings in cookiecutter.json
+uv run cookiecutter ../../ --no-input --overwrite-if-exists use_docker=n "$@"
 cd my_awesome_project
 
 # Install OS deps

@@ -83,8 +83,8 @@ accept and merge pull requests.
   </tr>
 </table>
 
-_Audrey is also the creator of Djinit. Audrey and Daniel are on
-the Djinit core team._
+_Audrey is also the creator of Cookiecutter. Audrey and Daniel are on
+the Cookiecutter core team._
 
 ## Other Contributors
 
