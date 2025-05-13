@@ -1,0 +1,16 @@
+services:
+  docs:
+    image: {{ djinit.project_slug }}_local_docs
+    container_name: {{ djinit.project_slug }}_local_docs
+    build:
+      context: .
+      dockerfile: ./compose/local/docs/Dockerfile
+    env_file:
+      - ./.envs/.local/.django
+    volumes:
+      - ./docs:/docs:z
+      - ./config:/app/config:z
+      - ./{{ djinit.project_slug }}:/app/{{ djinit.project_slug }}:z
+    ports:
+      - '9000:9000'
+    command: /start-docs
