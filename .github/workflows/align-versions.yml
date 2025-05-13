@@ -17,7 +17,7 @@ jobs:
     if: ${{ github.actor == 'pyup-bot' }}
     runs-on: ubuntu-latest
     env:
-      GH_PAT: ${{ secrets.GH_PAT }}
+      ORG_REPO_TOKEN: ${{ secrets.ORG_REPO_TOKEN }}
 
     strategy:
       fail-fast: false
@@ -32,14 +32,14 @@ jobs:
     steps:
       - name: Checkout with token
         uses: actions/checkout@v4
-        if: ${{ env.GH_PAT != '' }}
+        if: ${{ env.ORG_REPO_TOKEN != '' }}
         with:
-          token: ${{ env.GH_PAT }}
+          token: ${{ env.ORG_REPO_TOKEN }}
           ref: ${{ github.head_ref }}
 
       - name: Checkout without token
         uses: actions/checkout@v4
-        if: ${{ env.GH_PAT == '' }}
+        if: ${{ env.ORG_REPO_TOKEN == '' }}
         with:
           ref: ${{ github.head_ref }}
 
